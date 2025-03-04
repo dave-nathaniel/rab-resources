@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#42A5F5" />
+      <stop offset="100%" stop-color="#90CAF9" />
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="url(#logoGradient)" d="M35,10 L25,10 L20,30 L28,30 L23,45 L24,45 L40,25 L30,25 L35,10 Z" />
+    <text x="50" y="30" font-family="Arial, sans-serif" font-size="24" fill="#FFFFFF">Rab Homes</text>
+  </g>
+</svg>

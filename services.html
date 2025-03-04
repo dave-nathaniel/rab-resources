@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Rab Homes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+          <button class="btn btn-outline-light" id="acceptCookies">Accept</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency Contact Button -->
+    <div class="emergency-contact">
+      <button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#emergencyModal">
+        <i class="bi bi-telephone-fill"></i>
+      </button>
+    </div>
+
+    <!-- Emergency Contact Modal -->
+    <div class="modal fade" id="emergencyModal" tabindex="-1" aria-labelledby="emergencyModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="emergencyModalLabel">Emergency Contact</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>For emergency service or urgent assistance, please call our 24/7 support line:</p>
+            <h3 class="text-center"><a href="tel:1-800-RAB-HELP" class="text-decoration-none">1-800-RAB-HELP</a></h3>
+            <p class="mt-3">Our emergency response team is available at all times to address critical issues with your energy system.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="tel:1-800-RAB-HELP" class="btn btn-danger">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="Rab Homes Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="#solar">Solar Panel Installation</a></li>
+                <li><a class="dropdown-item" href="#storage">Energy Storage Solutions</a></li>
+                <li><a class="dropdown-item" href="#inverters">Inverter Systems</a></li>
+                <li><a class="dropdown-item" href="#consultation">Energy Consultation</a></li>
+                <li><a class="dropdown-item" href="#maintenance">Maintenance & Support</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-lg-3" href="contact.html#quote">Get a Quote</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold">Our Services</h1>
+            <p class="lead">Comprehensive renewable energy solutions tailored to your needs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Navigation -->
+    <section class="services-nav py-4 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="#solar">Solar Panels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#storage">Energy Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#inverters">Inverters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#consultation">Consultation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#maintenance">Maintenance</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solar Panel Installation -->
+    <section id="solar" class="service-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title">Solar Panel Installation</h2>
+            <p class="lead">Custom-designed solar energy systems for homes and businesses.</p>
+            <p>Rab Homes offers complete solar energy system design and installation services. Our process includes a free energy assessment, custom system design, professional installation, system commissioning, and utility interconnection.</p>
+            <div class="infographic mt-4">
+              <div class="infographic-title">Our Installation Process</div>
+              <div class="infographic-steps">
+                <div class="infographic-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h5>Free Energy Assessment</h5>
+                    <p>We evaluate your property, energy consumption patterns, and solar potential.</p>
+                  </div>
+                </div>
+                <div class="infographic-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h5>Custom System Design</h5>
+                    <p>We create a tailored solar solution based on your energy needs and roof characteristics.</p>
+                  </div>
+                </div>
+                <div class="infographic-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h5>Professional Installation</h5>
+                    <p>Our licensed technicians handle all aspects of installation, ensuring compliance with codes.</p>
+                  </div>
+                </div>
+                <div class="infographic-step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h5>System Commissioning</h5>
+                    <p>We thoroughly test each component to verify optimal performance.</p>
+                  </div>
+                </div>
+                <div class="infographic-step">
+                  <div class="step-number">5</div>
+                  <div class="step-content">
+                    <h5>Utility Interconnection</h5>
+                    <p>We manage all paperwork and coordination with your utility company.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pricing-calculator p-4 rounded shadow-sm">
+              <h3 class="h4 mb-4">Solar Panel Calculator</h3>
+              <div class="mb-3">
+                <label for="homeSize" class="form-label">Home Size (sq ft)</label>
+                <input type="number" class="form-control" id="homeSize" placeholder="e.g., 2000">
+              </div>
+              <div class="mb-3">
+                <label for="electricityBill" class="form-label">Monthly Electricity Bill ($)</label>
+                <input type="number" class="form-control" id="electricityBill" placeholder="e.g., 150">
+              </div>
+              <div class="mb-3">
+                <label for="roofType" class="form-label">Roof Type</label>
+                <select class="form-select" id="roofType">
+                  <option value="asphalt">Asphalt Shingle</option>
+                  <option value="metal">Metal</option>
+                  <option value="tile">Tile</option>
+                  <option value="flat">Flat</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="location" class="form-label">Location (Sunlight Hours)</label>
+                <select class="form-select" id="location">
+                  <option value="high">High Sunlight (7+ hours/day)</option>
+                  <option value="medium" selected>Medium Sunlight (5-6 hours/day)</option>
+                  <option value="low">Low Sunlight (3-4 hours/day)</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary w-100" id="calculateSolarSystem">Calculate System Size</button>
+              <div class="calculator-results mt-4" id="solarCalculatorResults">
+                <div class="result-item">
+                  <div class="result-label">Recommended System Size</div>
+                  <div class="result-value" id="recommendedSize">0 kW</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">Estimated Cost</div>
+                  <div class="result-value" id="estimatedCost">$0</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">After Tax Credit (30%)</div>
+                  <div class="result-value" id="afterTaxCredit">$0</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">Estimated Annual Savings</div>
+                  <div class="result-value" id="annualSavingsSolar">$0</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">Payback Period</div>
+                  <div class="result-value" id="paybackPeriod">0 years</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation Gallery -->
+    <section class="installation-gallery py-5 bg-light">
+      <div class="container">
+        <h3 class="text-center mb-4">Our Solar Installations</h3>
+        <div class="gallery-filters text-center mb-4">
+          <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">All</button>
+          <button class="btn btn-outline-primary me-2 mb-2" data-filter="residential">Residential</button>
+          <button class="btn btn-outline-primary me-2 mb-2" data-filter="commercial">Commercial</button>
+          <button class="btn btn-outline-primary mb-2" data-filter="industrial">Industrial</button>
+        </div>
+        <div class="row g-4 gallery-container">
+          <div class="col-md-4 gallery-item" data-category="residential">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1592833167665-45dd9bca8ad8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Residential Solar Installation">
+              <div class="card-body">
+                <h5 class="card-title">Modern Home Solar System</h5>
+                <p class="card-text">12kW system with premium panels and battery backup.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-item" data-category="commercial">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Commercial Solar Installation">
+              <div class="card-body">
+                <h5 class="card-title">Office Building Installation</h5>
+                <p class="card-text">75kW commercial system powering an entire office complex.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-item" data-category="residential">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Residential Roof Installation">
+              <div class="card-body">
+                <h5 class="card-title">Suburban Home System</h5>
+                <p class="card-text">8kW system with integrated smart home controls.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-item" data-category="industrial">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Industrial Solar Farm">
+              <div class="card-body">
+                <h5 class="card-title">Manufacturing Facility</h5>
+                <p class="card-text">250kW industrial system with ground-mounted arrays.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-item" data-category="commercial">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Commercial Rooftop">
+              <div class="card-body">
+                <h5 class="card-title">Retail Center Installation</h5>
+                <p class="card-text">100kW system covering a shopping center's energy needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-item" data-category="residential">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Modern Home">
+              <div class="card-body">
+                <h5 class="card-title">Luxury Home System</h5>
+                <p class="card-text">15kW premium installation with full home backup.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Energy Storage Solutions -->
+    <section id="storage" class="service-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+            <h2 class="section-title">Energy Storage Solutions</h2>
+            <p class="lead">Battery systems that provide energy independence and backup power.</p>
+            <p>Our battery storage systems provide energy independence and backup power for when you need it most. We offer home battery systems, commercial energy storage, and off-grid systems.</p>
+            <div class="comparison-table mt-4">
+              <h4>Battery System Comparison</h4>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Feature</th>
+                      <th>Basic</th>
+                      <th>Standard</th>
+                      <th>Premium</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Capacity</td>
+                      <td>5 kWh</td>
+                      <td>10 kWh</td>
+                      <td>15+ kWh</td>
+                    </tr>
+                    <tr>
+                      <td>Backup Duration</td>
+                      <td>4-6 hours</td>
+                      <td>12-24 hours</td>
+                      <td>24+ hours</td>
+                    </tr>
+                    <tr>
+                      <td>Smart Features</td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                    </tr>
+                    <tr>
+                      <td>Mobile Monitoring</td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                    </tr>
+                    <tr>
+                      <td>Whole Home Backup</td>
+                      <td><i class="bi bi-x-circle-fill text-danger"></i></td>
+                      <td>Partial</td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                    </tr>
+                    <tr>
+                      <td>Scalable</td>
+                      <td><i class="bi bi-x-circle-fill text-danger"></i></td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                      <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                    </tr>
+                    <tr>
+                      <td>Warranty</td>
+                      <td>5 years</td>
+                      <td>10 years</td>
+                      <td>15 years</td>
+                    </tr>
+                    <tr>
+                      <td>Starting Price</td>
+                      <td>$5,000</td>
+                      <td>$10,000</td>
+                      <td>$15,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="interactive-battery-diagram">
+              <h4 class="text-center mb-4">How Battery Storage Works</h4>
+              <div class="battery-diagram">
+                <img src="https://images.unsplash.com/photo-1593941707882-a5bba53b0998?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Battery Storage System" class="img-fluid rounded mb-3">
+                <div class="diagram-controls text-center">
+                  <button class="btn btn-sm btn-outline-primary me-2" data-mode="day">Daytime Operation</button>
+                  <button class="btn btn-sm btn-outline-primary me-2" data-mode="night">Nighttime Operation</button>
+                  <button class="btn btn-sm btn-outline-primary" data-mode="outage">Power Outage</button>
+                </div>
+                <div class="diagram-explanation mt-3">
+                  <div class="explanation-content" id="dayExplanation">
+                    <h5>Daytime Operation</h5>
+                    <p>During the day, solar panels generate electricity that powers your home and charges the battery system. Excess energy can be sent to the grid for credits.</p>
+                  </div>
+                  <div class="explanation-content d-none" id="nightExplanation">
+                    <h5>Nighttime Operation</h5>
+                    <p>At night, when solar production stops, the battery system discharges stored energy to power your home, reducing or eliminating the need to draw from the grid.</p>
+                  </div>
+                  <div class="explanation-content d-none" id="outageExplanation">
+                    <h5>Power Outage</h5>
+                    <p>During a grid outage, the battery system automatically disconnects from the grid and continues to power essential circuits in your home, providing uninterrupted electricity.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inverter Systems -->
+    <section id="inverters" class="service-section py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title">Inverter Systems</h2>
+            <p class="lead">The heart of any solar energy system.</p>
+            <p>Our inverter solutions include string inverters, microinverters, hybrid inverters, and smart monitoring capabilities. We help you choose the right inverter technology for your specific needs.</p>
+            <div class="infographic mt-4">
+              <div class="infographic-title">Types of Inverters</div>
+              <div class="accordion" id="inverterAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      String Inverters
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#inverterAccordion">
+                    <div class="accordion-body">
+                      <p><strong>Best for:</strong> Systems with consistent sunlight exposure and uniform panel orientation.</p>
+                      <p><strong>Advantages:</strong> Cost-effective, simple design, easy maintenance.</p>
+                      <p><strong>Limitations:</strong> Entire string affected by shading on a single panel.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Microinverters
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#inverterAccordion">
+                    <div class="accordion-body">
+                      <p><strong>Best for:</strong> Systems with partial shading or complex roof designs.</p>
+                      <p><strong>Advantages:</strong> Panel-level optimization, detailed monitoring, no single point of failure.</p>
+                      <p><strong>Limitations:</strong> Higher initial cost, more components on the roof.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Hybrid Inverters
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#inverterAccordion">
+                    <div class="accordion-body">
+                      <p><strong>Best for:</strong> Systems with battery storage integration.</p>
+                      <p><strong>Advantages:</strong> Manages both solar production and battery storage, simplified system design.</p>
+                      <p><strong>Limitations:</strong> More complex setup, higher cost than basic string inverters.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Power Optimizers
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#inverterAccordion">
+                    <div class="accordion-body">
+                      <p><strong>Best for:</strong> Balancing performance and cost.</p>
+                      <p><strong>Advantages:</strong> Panel-level optimization with central inverter, good performance in partial shading.</p>
+                      <p><strong>Limitations:</strong> Still relies on a central inverter as potential single point of failure.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="inverter-efficiency-chart p-4 rounded shadow-sm">
+              <h4 class="mb-4">Inverter Efficiency Comparison</h4>
+              <div class="chart-container">
+                <canvas id="inverterChart"></canvas>
+              </div>
+              <div class="chart-legend mt-3">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="legend-color" style="background-color: rgba(21, 101, 192, 0.7);"></div>
+                  <div class="legend-label">String Inverter</div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="legend-color" style="background-color: rgba(46, 204, 113, 0.7);"></div>
+                  <div class="legend-label">Microinverter</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="legend-color" style="background-color: rgba(241, 196, 15, 0.7);"></div>
+                  <div class="legend-label">Hybrid Inverter</div>
+                </div>
+              </div>
+              <p class="mt-3 small">*Efficiency varies based on operating conditions and specific models. This chart represents typical performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Energy Consultation Services -->
+    <section id="consultation" class="service-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+            <h2 class="section-title">Energy Consultation Services</h2>
+            <p class="lead">Expert guidance for your renewable energy journey.</p>
+            <p>Our expert consultants provide comprehensive guidance on energy efficiency audits, solar feasibility studies, financial analysis, and regulatory guidance.</p>
+            <div class="consultation-process mt-4">
+              <h4>Our Consultation Process</h4>
+              <div class="process-steps">
+                <div class="process-step">
+                  <div class="step-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                  </div>
+                  <div class="step-content">
+                    <h5>Energy Audit</h5>
+                    <p>We analyze your current energy usage patterns and identify opportunities for efficiency improvements before sizing your renewable energy system.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div class="step-icon">
+                    <i class="bi bi-house-gear"></i>
+                  </div>
+                  <div class="step-content">
+                    <h5>Site Assessment</h5>
+                    <p>Our technicians conduct a detailed evaluation of your property, including roof condition, orientation, shading analysis, and electrical infrastructure.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div class="step-icon">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="step-content">
+                    <h5>Financial Analysis</h5>
+                    <p>We provide a comprehensive breakdown of costs, available incentives, financing options, and projected return on investment for your specific situation.</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div class="step-icon">
+                    <i class="bi bi-file-earmark-text"></i>
+                  </div>
+                  <div class="step-content">
+                    <h5>Proposal Development</h5>
+                    <p>Based on our findings, we create a detailed proposal with system design, expected production, and financial projections tailored to your needs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="consultation-form p-4 rounded shadow-sm">
+              <h4 class="mb-4">Request a Free Consultation</h4>
+              <form id="consultationForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                  <label for="propertyType" class="form-label">Property Type</label>
+                  <select class="form-select" id="propertyType" required>
+                    <option value="" selected disabled>Select property type</option>
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="industrial">Industrial</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="interestedIn" class="form-label">Interested In</label>
+                  <select class="form-select" id="interestedIn" required>
+                    <option value="" selected disabled>Select service</option>
+                    <option value="solar">Solar Panel Installation</option>
+                    <option value="battery">Energy Storage Solutions</option>
+                    <option value="both">Both Solar and Storage</option>
+                    <option value="consultation">Energy Consultation Only</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Additional Information</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maintenance and Support -->
+    <section id="maintenance" class="service-section py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title">Maintenance & Support</h2>
+            <p class="lead">Ensuring optimal performance for the lifetime of your system.</p>
+            <p>We stand behind every installation with regular maintenance plans, performance monitoring, rapid response support, and system upgrades as your needs evolve.</p>
+            <div class="maintenance-plans mt-4">
+              <h4>Maintenance Plan Options</h4>
+              <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                      <h5 class="card-title mb-0">Basic</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="price-tag mb-3">$99<span>/year</span></div>
+                      <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Annual system inspection</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic performance monitoring</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Phone & email support</li>
+                        <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Panel cleaning</li>
+                        <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Priority service</li>
+                      </ul>
+                    </div>
+                    <div class="card-footer">
+                      <a href="contact.html" class="btn btn-outline-primary w-100">Select Plan</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                      <h5 class="card-title mb-0">Standard</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="price-tag mb-3">$199<span>/year</span></div>
+                      <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Semi-annual inspection</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Advanced monitoring</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Phone & email support</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Annual panel cleaning</li>
+                        <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Priority service</li>
+                      </ul>
+                    </div>
+                    <div class="card-footer">
+                      <a href="contact.html" class="btn btn-outline-primary w-100">Select Plan</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                      <h5 class="card-title mb-0">Premium</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="price-tag mb-3">$299<span>/year</span></div>
+                      <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Quarterly inspection</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Real-time monitoring</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>24/7 phone & email support</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bi-annual panel cleaning</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Priority service</li>
+                      </ul>
+                    </div>
+                    <div class="card-footer">
+                      <a href="contact.html" class="btn btn-primary w-100">Select Plan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="monitoring-dashboard p-4 rounded shadow-sm">
+              <h4 class="mb-4">System Monitoring Dashboard</h4>
+              <div class="dashboard-preview">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Monitoring Dashboard" class="img-fluid rounded mb-3">
+                <div class="dashboard-features">
+                  <h5>Key Monitoring Features</h5>
+                  <div class="row g-3 mt-2">
+                    <div class="col-6">
+                      <div class="feature-item">
+                        <i class="bi bi-graph-up"></i>
+                        <span>Real-time production</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="feature-item">
+                        <i class="bi bi-lightning-charge"></i>
+                        <span>Energy consumption</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="feature-item">
+                        <i class="bi bi-cash-coin"></i>
+                        <span>Financial savings</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="feature-item">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <span>Alert notifications</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="feature-item">
+                        <i class="bi bi-cloud-download"></i>
+                        <span>Historical data</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="feature-item">
+                        <i class="bi bi-phone"></i>
+                        <span>Mobile app access</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <h2 class="h3">Ready to get started with your renewable energy project?</h2>
+            <p class="mb-0">Contact us today for a free consultation and personalized quote.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html#quote" class="btn btn-light btn-lg">Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="images/logo-white.svg" alt="Rab Homes Logo" height="40" class="mb-4">
+            <p>Rab Homes is a comprehensive renewable energy provider specializing in solar panel systems, energy storage solutions, and consultation services for both residential and commercial clients.</p>
+            <div class="social-links">
+              <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="me-2"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2 mb-4 mb-lg-0">
+            <h5 class="mb-4">Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+            <h5 class="mb-4">Services</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#solar">Solar Panel Installation</a></li>
+              <li><a href="#storage">Energy Storage Solutions</a></li>
+              <li><a href="#inverters">Inverter Systems</a></li>
+              <li><a href="#consultation">Energy Consultation</a></li>
+              <li><a href="#maintenance">Maintenance & Support</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="mb-4">Newsletter</h5>
+            <p>Subscribe to our newsletter for the latest updates and energy tips.</p>
+            <form class="newsletter-form">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" required>
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+            <p class="mt-3">
+              <i class="bi bi-telephone-fill me-2"></i> 1-800-RAB-HOMES<br>
+              <i class="bi bi-envelope-fill me-2"></i> info@rabhomes.com
+            </p>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4 border-secondary">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <p class="mb-0">&copy; 2025 Rab Homes. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/services.js"></script>
+  </body>
+</html>

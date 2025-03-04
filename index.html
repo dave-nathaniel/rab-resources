@@ -1,721 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<!-- SEO Meta Tags -->
-		<title>Rab Homes | Sustainable Energy Solutions</title>
-		<meta name="description" content="Rab Homes provides comprehensive renewable energy solutions including solar panel installation, energy storage, and consultation services for homes and businesses." />
-		<meta name="keywords" content="renewable energy, solar panels, energy storage, solar installation, green energy, sustainable power, home solar" />
-		<meta name="author" content="Rab Homes" />
-		
-		<!-- Open Graph / Social Media Meta Tags -->
-		<meta property="og:title" content="Rab Homes | Sustainable Energy Solutions" />
-		<meta property="og:description" content="Transform your home or business with sustainable energy solutions from Rab Homes." />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://www.rabhomes.com/" />
-		<meta property="og:image" content="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
-		
-		<!-- Favicon -->
-		<link rel="icon" type="image/svg+xml" href="assets/favicon-DF7ahu98.svg" />
-		
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-		
-		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		
-		<!-- Structured Data -->
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "LocalBusiness",
-				"name": "Rab Homes",
-				"image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-				"description": "Comprehensive renewable energy provider specializing in solar panel systems, energy storage solutions, and consultation services.",
-				"address": {
-					"@type": "PostalAddress",
-					"streetAddress": "123 Energy Way",
-					"addressLocality": "Solarville",
-					"addressRegion": "CA",
-					"postalCode": "90210",
-					"addressCountry": "US"
-				},
-				"telephone": "+1-555-123-4567",
-				"email": "info@rabhomes.com",
-				"url": "https://www.rabhomes.com",
-				"sameAs": [
-					"https://www.facebook.com/rabhomes",
-					"https://www.twitter.com/rabhomes",
-					"https://www.linkedin.com/company/rabhomes",
-					"https://www.instagram.com/rabhomes"
-				],
-				"openingHoursSpecification": [
-					{
-						"@type": "OpeningHoursSpecification",
-						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-						"opens": "08:00",
-						"closes": "18:00"
-					},
-					{
-						"@type": "OpeningHoursSpecification",
-						"dayOfWeek": "Saturday",
-						"opens": "09:00",
-						"closes": "14:00"
-					}
-				],
-				"priceRange": "$$"
-			}
-		</script>
-		<script type="module" crossorigin src="assets/index-euAA13Jm.js"></script>
-		<link rel="stylesheet" crossorigin href="assets/index-BMLpIErS.css">
-	</head>
-	<body>
-		<!-- Cookie Consent Banner -->
-		<div id="cookieConsent" class="cookie-consent">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-8">
-						<p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
-					</div>
-					<div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-						<button id="cookieAccept" class="btn btn-light me-2">Accept</button>
-						<button id="cookieDecline" class="btn btn-outline-light">Decline</button>
-					</div>
-				</div>
-			</div>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rab Homes - Sustainable Energy Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+          <button class="btn btn-outline-light" id="acceptCookies">Accept</button>
+        </div>
+      </div>
+    </div>
 
-		<!-- Sticky Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<span class="text-primary fw-bold">Rab Homes</span>
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a class="nav-link active" href="index.html">Home</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Services
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-								<li><a class="dropdown-item" href="solar-installation.html">Solar Panel Installation</a></li>
-								<li><a class="dropdown-item" href="energy-storage.html">Energy Storage Solutions</a></li>
-								<li><a class="dropdown-item" href="consultation.html">Energy Consultation</a></li>
-								<li><a class="dropdown-item" href="maintenance.html">Maintenance & Support</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="projects.html">Projects</a>
-						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" href="blog.html">Blog</a>
-						</li> -->
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</li>
-						<li class="nav-item ms-lg-3">
-							<a class="btn btn-primary" href="quote.html">Get a Quote</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+    <!-- Emergency Contact Button -->
+    <div class="emergency-contact">
+      <button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#emergencyModal">
+        <i class="bi bi-telephone-fill"></i>
+      </button>
+    </div>
 
-		<!-- Hero Section -->
-		<section class="hero-section">
-			<div class="container">
-				<div class="row align-items-center min-vh-75">
-					<div class="col-lg-6">
-						<h1 class="display-4 fw-bold mb-4">Sustainable Energy for a Brighter Future</h1>
-						<p class="lead mb-4">Transform your home or business with cutting-edge renewable energy solutions that save money and protect our planet.</p>
-						<div class="d-flex flex-wrap gap-2">
-							<a href="quote.html" class="btn btn-primary btn-lg">Free Consultation</a>
-							<a href="#services" class="btn btn-outline-primary btn-lg">Our Services</a>
-						</div>
-						<div class="mt-4 d-flex align-items-center">
-							<div class="me-4">
-								<div class="d-flex align-items-center">
-									<div class="text-success me-2">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-									</div>
-									<span>30% Federal Tax Credit</span>
-								</div>
-							</div>
-							<div>
-								<div class="d-flex align-items-center">
-									<div class="text-success me-2">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-									</div>
-									<span>25+ Year Warranty</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 mt-5 mt-lg-0">
-						<div class="hero-image-container">
-							<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Solar panels on a modern home" class="img-fluid rounded-4 shadow-lg">
-							<div class="energy-counter">
-								<div class="counter-inner">
-									<h4>Clean Energy Generated</h4>
-									<div class="counter-value" id="energyCounter">0</div>
-									<span>MWh and counting</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Emergency Contact Modal -->
+    <div class="modal fade" id="emergencyModal" tabindex="-1" aria-labelledby="emergencyModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="emergencyModalLabel">Emergency Contact</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>For emergency service or urgent assistance, please call our 24/7 support line:</p>
+            <h3 class="text-center"><a href="tel:1-800-RAB-HELP" class="text-decoration-none">1-800-RAB-HELP</a></h3>
+            <p class="mt-3">Our emergency response team is available at all times to address critical issues with your energy system.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="tel:1-800-RAB-HELP" class="btn btn-danger">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Services Section -->
-		<section id="services" class="py-5 bg-light">
-			<div class="container py-5">
-				<div class="text-center mb-5">
-					<h2 class="section-title">Our Services</h2>
-					<p class="section-subtitle">Comprehensive renewable energy solutions for every need</p>
-				</div>
-				<div class="row g-4">
-					<!-- Service Card 1 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="card service-card h-100">
-							<div class="card-body text-center p-4">
-								<div class="service-icon mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-								</div>
-								<h3 class="card-title">Solar Panel Installation</h3>
-								<p class="card-text">Custom designed solar energy systems for residential and commercial properties.</p>
-								<a href="solar-installation.html" class="btn btn-outline-primary mt-3">Learn More</a>
-							</div>
-						</div>
-					</div>
-					
-					<!-- Service Card 2 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="card service-card h-100">
-							<div class="card-body text-center p-4">
-								<div class="service-icon mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-battery-charging"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline></svg>
-								</div>
-								<h3 class="card-title">Energy Storage</h3>
-								<p class="card-text">Advanced battery systems for energy independence and backup power solutions.</p>
-								<a href="energy-storage.html" class="btn btn-outline-primary mt-3">Learn More</a>
-							</div>
-						</div>
-					</div>
-					
-					<!-- Service Card 3 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="card service-card h-100">
-							<div class="card-body text-center p-4">
-								<div class="service-icon mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
-								</div>
-								<h3 class="card-title">Energy Consultation</h3>
-								<p class="card-text">Expert guidance on energy efficiency, system design, and financial analysis.</p>
-								<a href="consultation.html" class="btn btn-outline-primary mt-3">Learn More</a>
-							</div>
-						</div>
-					</div>
-					
-					<!-- Service Card 4 -->
-					<div class="col-md-6 col-lg-3">
-						<div class="card service-card h-100">
-							<div class="card-body text-center p-4">
-								<div class="service-icon mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tool"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-								</div>
-								<h3 class="card-title">Maintenance & Support</h3>
-								<p class="card-text">Comprehensive maintenance plans and rapid response technical support.</p>
-								<a href="maintenance.html" class="btn btn-outline-primary mt-3">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="Rab Homes Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="services.html#solar">Solar Panel Installation</a></li>
+                <li><a class="dropdown-item" href="services.html#storage">Energy Storage Solutions</a></li>
+                <li><a class="dropdown-item" href="services.html#inverters">Inverter Systems</a></li>
+                <li><a class="dropdown-item" href="services.html#consultation">Energy Consultation</a></li>
+                <li><a class="dropdown-item" href="services.html#maintenance">Maintenance & Support</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-lg-3" href="contact.html#quote">Get a Quote</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Statistics Section -->
-		<section class="py-5 bg-dark text-white">
-			<div class="container py-5">
-				<div class="row text-center">
-					<div class="col-6 col-md-3 mb-4 mb-md-0">
-						<div class="stat-item">
-							<h2 class="stat-number" data-count="1500">0</h2>
-							<p class="stat-label">Installations Completed</p>
-						</div>
-					</div>
-					<div class="col-6 col-md-3 mb-4 mb-md-0">
-						<div class="stat-item">
-							<h2 class="stat-number" data-count="25000">0</h2>
-							<p class="stat-label">MWh Generated</p>
-						</div>
-					</div>
-					<div class="col-6 col-md-3">
-						<div class="stat-item">
-							<h2 class="stat-number" data-count="98">0</h2>
-							<p class="stat-label">Customer Satisfaction</p>
-						</div>
-					</div>
-					<div class="col-6 col-md-3">
-						<div class="stat-item">
-							<h2 class="stat-number" data-count="15000">0</h2>
-							<p class="stat-label">Tons of CO₂ Offset</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center min-vh-75">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">Sustainable Energy for Homes and Businesses</h1>
+            <p class="lead mb-4">Transform your property with renewable energy solutions that save money and protect our planet.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="contact.html#quote" class="btn btn-primary btn-lg">Get a Free Quote</a>
+              <a href="services.html" class="btn btn-outline-dark btn-lg">Explore Services</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="energy-counter-container mt-5 mt-lg-0">
+              <div class="energy-counter text-center p-4 rounded shadow">
+                <h3>Live Energy Production</h3>
+                <div class="counter-display">
+                  <div class="counter-value" id="energyCounter">0</div>
+                  <div class="counter-unit">kWh</div>
+                </div>
+                <p>Clean energy generated by our customers today</p>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 0%" id="energyProgress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mt-2 mb-0"><small>Equivalent to <span id="treesPlanted">0</span> trees planted</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Why Choose Us Section -->
-		<section class="py-5">
-			<div class="container py-5">
-				<div class="row align-items-center">
-					<div class="col-lg-6 mb-4 mb-lg-0">
-						<img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Solar technicians installing panels" class="img-fluid rounded-4 shadow">
-					</div>
-					<div class="col-lg-6">
-						<h2 class="section-title">Why Choose Rab Homes?</h2>
-						<p class="mb-4">We combine industry expertise with personalized service to deliver renewable energy solutions that exceed expectations.</p>
-						
-						<div class="feature-item d-flex mb-4">
-							<div class="feature-icon me-3 text-success">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-							</div>
-							<div>
-								<h4>Certified Professionals</h4>
-								<p>Our team includes NABCEP certified solar professionals and licensed electrical contractors.</p>
-							</div>
-						</div>
-						
-						<div class="feature-item d-flex mb-4">
-							<div class="feature-icon me-3 text-success">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-							</div>
-							<div>
-								<h4>Quality Assurance</h4>
-								<p>We use only tier-1 equipment with comprehensive warranties and rigorous installation standards.</p>
-							</div>
-						</div>
-						
-						<div class="feature-item d-flex mb-4">
-							<div class="feature-icon me-3 text-success">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-							</div>
-							<div>
-								<h4>Transparent Pricing</h4>
-								<p>No hidden costs or surprise fees. We provide detailed quotes and financing options.</p>
-							</div>
-						</div>
-						
-						<div class="feature-item d-flex">
-							<div class="feature-icon me-3 text-success">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-headphones"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-							</div>
-							<div>
-								<h4>Dedicated Support</h4>
-								<p>Ongoing maintenance and rapid response support for the lifetime of your system.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Services Section -->
+    <section class="services py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">Comprehensive renewable energy solutions for every need</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-sun-fill"></i>
+                </div>
+                <h3 class="card-title h5">Solar Panel Installation</h3>
+                <p class="card-text">Custom-designed solar energy systems for residential and commercial properties.</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Free energy assessment</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Custom system design</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Professional installation</li>
+                </ul>
+                <a href="services.html#solar" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-battery-charging"></i>
+                </div>
+                <h3 class="card-title h5">Energy Storage Solutions</h3>
+                <p class="card-text">Battery systems that provide energy independence and backup power.</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Home battery systems</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Commercial energy storage</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Off-grid solutions</li>
+                </ul>
+                <a href="services.html#storage" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <h3 class="card-title h5">Maintenance & Support</h3>
+                <p class="card-text">Comprehensive care for your renewable energy systems.</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Regular maintenance plans</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Performance monitoring</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Rapid response support</li>
+                </ul>
+                <a href="services.html#maintenance" class="btn btn-outline-primary mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Testimonials Section -->
-		<section class="py-5 bg-light">
-			<div class="container py-5">
-				<div class="text-center mb-5">
-					<h2 class="section-title">What Our Clients Say</h2>
-					<p class="section-subtitle">Hear from homeowners and businesses who've made the switch to clean energy</p>
-				</div>
-				
-				<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-						<!-- Testimonial 1 -->
-						<div class="carousel-item active">
-							<div class="testimonial-card">
-								<div class="row justify-content-center">
-									<div class="col-lg-8">
-										<div class="card border-0 shadow-sm">
-											<div class="card-body p-5">
-												<div class="d-flex align-items-center mb-4">
-													<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="John Smith" class="rounded-circle me-3" width="60">
-													<div>
-														<h5 class="mb-0">John Smith</h5>
-														<p class="text-muted mb-0">Homeowner</p>
-													</div>
-													<div class="ms-auto">
-														<div class="text-warning">
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-														</div>
-													</div>
-												</div>
-												<p class="testimonial-text">"Rab Homes transformed our home energy use completely. From the initial consultation to the final installation, every step was handled professionally. We're now producing more electricity than we use most months, and our utility bills have virtually disappeared."</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Testimonial 2 -->
-						<div class="carousel-item">
-							<div class="testimonial-card">
-								<div class="row justify-content-center">
-									<div class="col-lg-8">
-										<div class="card border-0 shadow-sm">
-											<div class="card-body p-5">
-												<div class="d-flex align-items-center mb-4">
-													<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson" class="rounded-circle me-3" width="60">
-													<div>
-														<h5 class="mb-0">Sarah Johnson</h5>
-														<p class="text-muted mb-0">Small Business Owner</p>
-													</div>
-													<div class="ms-auto">
-														<div class="text-warning">
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-														</div>
-													</div>
-												</div>
-												<p class="testimonial-text">"As a small manufacturing business, energy costs were a significant expense. Rab Homes designed a commercial solar system that reduced our electricity costs by 75%. The team was knowledgeable about commercial incentives and helped us maximize our return on investment."</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Testimonial 3 -->
-						<div class="carousel-item">
-							<div class="testimonial-card">
-								<div class="row justify-content-center">
-									<div class="col-lg-8">
-										<div class="card border-0 shadow-sm">
-											<div class="card-body p-5">
-												<div class="d-flex align-items-center mb-4">
-													<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Michael Davis" class="rounded-circle me-3" width="60">
-													<div>
-														<h5 class="mb-0">Michael Davis</h5>
-														<p class="text-muted mb-0">Property Developer</p>
-													</div>
-													<div class="ms-auto">
-														<div class="text-warning">
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-half"></i>
-														</div>
-													</div>
-												</div>
-												<p class="testimonial-text">"We've partnered with Rab Homes on multiple projects, and they consistently deliver quality installations on time and on budget. Their expertise in commercial-scale solar has added significant value to our properties and attracted environmentally conscious tenants."</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-					
-					<div class="carousel-indicators position-relative mt-4">
-						<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Stats Section -->
+    <section class="stats py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div class="stat-item">
+              <div class="stat-number" data-count="5000">0</div>
+              <div class="stat-label">Installations</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div class="stat-item">
+              <div class="stat-number" data-count="98">0</div>
+              <div class="stat-label">Customer Satisfaction %</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-count="25000">0</div>
+              <div class="stat-label">MWh Generated</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-count="15">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- CTA Section -->
-		<section class="py-5 bg-dark text-white">
-			<div class="container py-5 text-center">
-				<h2 class="mb-4">Ready to Make the Switch to Clean Energy?</h2>
-				<p class="lead mb-4">Schedule a free consultation with our energy experts today.</p>
-				<a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
-			</div>
-		</section>
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Real experiences from satisfied customers</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <div class="testimonial-rating mb-3">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="testimonial-text">"Rab Homes transformed our home energy use completely. From the initial consultation to the final installation, every step was handled professionally. We're now producing more electricity than we use most months, and our utility bills have virtually disappeared."</p>
+                  <div class="testimonial-author">
+                    <h5 class="mb-0">John Smith</h5>
+                    <p class="mb-0">Homeowner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <div class="testimonial-rating mb-3">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="testimonial-text">"As a small manufacturing business, energy costs were a significant expense. Rab Homes designed a commercial solar system that reduced our electricity costs by 75%. The team was knowledgeable about commercial incentives and helped us maximize our return on investment."</p>
+                  <div class="testimonial-author">
+                    <h5 class="mb-0">Sarah Johnson</h5>
+                    <p class="mb-0">Small Business Owner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <div class="testimonial-rating mb-3">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="testimonial-text">"We've partnered with Rab Homes on multiple projects, and they consistently deliver quality installations on time and on budget. Their expertise in commercial-scale solar has added significant value to our properties and attracted environmentally conscious tenants."</p>
+                  <div class="testimonial-author">
+                    <h5 class="mb-0">Michael Chen</h5>
+                    <p class="mb-0">Property Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Calculator Section -->
-		<section class="py-5">
-			<div class="container py-5">
-				<div class="row align-items-center">
-					<div class="col-lg-5 mb-4 mb-lg-0">
-						<h2 class="section-title">Calculate Your Savings</h2>
-						<p class="mb-4">See how much you could save by switching to solar energy. Our calculator provides an estimate based on your current energy usage and location.</p>
-						<div class="savings-highlights mb-4">
-							<div class="d-flex align-items-center mb-3">
-								<div class="savings-icon me-3 text-success">
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-down"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
-								</div>
-								<div>
-									<h5 class="mb-0">Lower Monthly Bills</h5>
-									<p class="text-muted mb-0">60-90% reduction in electricity costs</p>
-								</div>
-							</div>
-							<div class="d-flex align-items-center mb-3">
-								<div class="savings-icon me-3 text-success">
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-								</div>
-								<div>
-									<h5 class="mb-0">Increased Property Value</h5>
-									<p class="text-muted mb-0">Homes with solar sell for 4.1% more</p>
-								</div>
-							</div>
-							<div class="d-flex align-items-center">
-								<div class="savings-icon me-3 text-success">
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-								</div>
-								<div>
-									<h5 class="mb-0">Quick Break-Even</h5>
-									<p class="text-muted mb-0">Most systems pay for themselves in 5-8 years</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-7">
-						<div class="card border-0 shadow-sm">
-							<div class="card-body p-4 p-lg-5">
-								<h3 class="card-title mb-4">Energy Savings Calculator</h3>
-								<form id="savingsCalculator">
-									<div class="row g-3">
-										<div class="col-md-6">
-											<label for="monthlyBill" class="form-label">Monthly Electricity Bill ($)</label>
-											<input type="number" class="form-control" id="monthlyBill" placeholder="e.g., 150" required>
-										</div>
-										<div class="col-md-6">
-											<label for="location" class="form-label">Your Location</label>
-											<select class="form-select" id="location" required>
-												<option value="" selected disabled>Select your state</option>
-												<option value="CA">California</option>
-												<option value="AZ">Arizona</option>
-												<option value="TX">Texas</option>
-												<option value="FL">Florida</option>
-												<option value="NY">New York</option>
-												<option value="other">Other</option>
-											</select>
-										</div>
-										<div class="col-md-6">
-											<label for="roofType" class="form-label">Roof Type</label>
-											<select class="form-select" id="roofType">
-												<option value="asphalt">Asphalt Shingle</option>
-												<option value="metal">Metal</option>
-												<option value="tile">Tile</option>
-												<option value="flat">Flat</option>
-												<option value="other">Other</option>
-											</select>
-										</div>
-										<div class="col-md-6">
-											<label for="homeSize" class="form-label">Home Size (sq ft)</label>
-											<input type="number" class="form-control" id="homeSize" placeholder="e.g., 2000">
-										</div>
-										<div class="col-12">
-											<label for="shading" class="form-label">Roof Shading</label>
-											<div class="range-slider">
-												<input type="range" class="form-range" min="0" max="100" value="20" id="shading">
-												<div class="d-flex justify-content-between">
-													<span>Full Sun</span>
-													<span>Partial Shade</span>
-													<span>Heavy Shade</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 mt-4">
-											<button type="submit" class="btn btn-primary w-100">Calculate Savings</button>
-										</div>
-									</div>
-								</form>
-								
-								<div id="calculationResults" class="mt-4 p-4 bg-light rounded d-none">
-									<h4 class="mb-3">Your Estimated Savings</h4>
-									<div class="row">
-										<div class="col-md-4 text-center mb-3 mb-md-0">
-											<h5 class="text-primary mb-1">Monthly</h5>
-											<p class="h3 mb-0" id="monthlySavings">$0</p>
-										</div>
-										<div class="col-md-4 text-center mb-3 mb-md-0">
-											<h5 class="text-primary mb-1">Annual</h5>
-											<p class="h3 mb-0" id="annualSavings">$0</p>
-										</div>
-										<div class="col-md-4 text-center">
-											<h5 class="text-primary mb-1">25-Year</h5>
-											<p class="h3 mb-0" id="lifetimeSavings">$0</p>
-										</div>
-									</div>
-									<div class="text-center mt-4">
-										<a href="quote.html" class="btn btn-success">Get a Detailed Quote</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Energy Calculator Section -->
+    <section class="calculator py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h2 class="section-title">Energy Savings Calculator</h2>
+            <p>Estimate your potential savings with solar energy. Enter your current monthly electricity bill to see how much you could save.</p>
+            <div class="calculator-form">
+              <div class="mb-3">
+                <label for="monthlyBill" class="form-label">Monthly Electricity Bill ($)</label>
+                <input type="number" class="form-control" id="monthlyBill" placeholder="e.g., 150">
+              </div>
+              <div class="mb-3">
+                <label for="sunlightHours" class="form-label">Average Daily Sunlight Hours</label>
+                <select class="form-select" id="sunlightHours">
+                  <option value="3">3-4 hours (Northern regions)</option>
+                  <option value="5" selected>5-6 hours (Central regions)</option>
+                  <option value="7">7+ hours (Southern regions)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="roofSize" class="form-label">Estimated Roof Size (sq ft)</label>
+                <input type="number" class="form-control" id="roofSize" placeholder="e.g., 1500">
+              </div>
+              <button type="button" class="btn btn-primary" id="calculateSavings">Calculate Savings</button>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="calculator-results p-4 rounded shadow-sm" id="calculatorResults">
+              <h3 class="h4 mb-4">Your Estimated Savings</h3>
+              <div class="results-container">
+                <div class="result-item">
+                  <div class="result-label">Monthly Savings</div>
+                  <div class="result-value" id="monthlySavings">$0</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">Annual Savings</div>
+                  <div class="result-value" id="annualSavings">$0</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">25-Year Savings</div>
+                  <div class="result-value" id="lifetimeSavings">$0</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">System Size Estimate</div>
+                  <div class="result-value" id="systemSize">0 kW</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-label">Break-Even Point</div>
+                  <div class="result-value" id="breakEven">0 years</div>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <p class="disclaimer">This is an estimate based on average values. For a precise quote, <a href="contact.html#quote">contact us</a> for a free consultation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Newsletter Section -->
-		<section class="py-5 bg-light">
-			<div class="container py-5">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 text-center">
-						<h2 class="section-title">Stay Updated</h2>
-						<p class="section-subtitle mb-4">Subscribe to our newsletter for the latest renewable energy news and exclusive offers</p>
-						<form class="newsletter-form">
-							<div class="input-group mb-3">
-								<input type="email" class="form-control form-control-lg" placeholder="Your email address" aria-label="Email address" required>
-								<button class="btn btn-primary" type="submit">Subscribe</button>
-							</div>
-							<div class="form-text text-center">We respect your privacy. Unsubscribe at any time.</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- CTA Section -->
+    <section class="cta py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <h2 class="h3">Ready to switch to clean, renewable energy?</h2>
+            <p class="mb-0">Get a free consultation and find out how much you can save.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html#quote" class="btn btn-light btn-lg">Get Started Today</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Footer -->
-		<footer class="bg-dark text-white pt-5 pb-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 mb-4 mb-lg-0">
-						<h4 class="text-white mb-4">Rab Homes</h4>
-						<p>Comprehensive renewable energy provider specializing in solar panel systems, energy storage solutions, and consultation services.</p>
-						<div class="social-icons mt-4">
-							<a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-							<a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-							<a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-							<a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-							<a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-						<h5 class="text-white mb-4">Quick Links</h5>
-						<ul class="list-unstyled footer-links">
-							<li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
-							<li class="mb-2"><a href="about.html" class="text-white-50">About Us</a></li>
-							<li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
-							<li class="mb-2"><a href="projects.html" class="text-white-50">Projects</a></li>
-							<li class="mb-2"><a href="blog.html" class="text-white-50">Blog</a></li>
-							<li><a href="contact.html" class="text-white-50">Contact</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-4 mb-4 mb-md-0">
-						<h5 class="text-white mb-4">Our Services</h5>
-						<ul class="list-unstyled footer-links">
-							<li class="mb-2"><a href="solar-installation.html" class="text-white-50">Solar Panel Installation</a></li>
-							<li class="mb-2"><a href="energy-storage.html" class="text-white-50">Energy Storage Solutions</a></li>
-							<li class="mb-2"><a href="consultation.html" class="text-white-50">Energy Consultation</a></li>
-							<li class="mb-2"><a href="maintenance.html" class="text-white-50">Maintenance & Support</a></li>
-							<li><a href="commercial.html" class="text-white-50">Commercial Solutions</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-4">
-						<h5 class="text-white mb-4">Contact Info</h5>
-						<ul class="list-unstyled footer-contact">
-							<li class="d-flex mb-3">
-								<i class="bi bi-geo-alt-fill me-2 text-primary"></i>
-								<span>123 Energy Way, Solarville, CA 90210</span>
-							</li>
-							<li class="d-flex mb-3">
-								<i class="bi bi-telephone-fill me-2 text-primary"></i>
-								<span>(555) 123-4567</span>
-							</li>
-							<li class="d-flex mb-3">
-								<i class="bi bi-envelope-fill me-2 text-primary"></i>
-								<span>info@rabhomes.com</span>
-							</li>
-							<li class="d-flex">
-								<i class="bi bi-clock-fill me-2 text-primary"></i>
-								<span>Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<hr class="mt-4 mb-4 border-secondary">
-				<div class="row align-items-center">
-					<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-						<p class="mb-0 text-white-50">&copy; 2025 Rab Homes. All rights reserved.</p>
-					</div>
-					<div class="col-md-6 text-center text-md-end">
-						<ul class="list-inline mb-0">
-							<li class="list-inline-item"><a href="#" class="text-white-50">Privacy Policy</a></li>
-							<li class="list-inline-item"><span class="text-white-50">|</span></li>
-							<li class="list-inline-item"><a href="#" class="text-white-50">Terms of Service</a></li>
-							<li class="list-inline-item"><span class="text-white-50">|</span></li>
-							<li class="list-inline-item"><a href="#" class="text-white-50">Sitemap</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- Emergency Contact Button -->
-		<div class="emergency-contact">
-			<button class="btn btn-danger rounded-circle" data-bs-toggle="modal" data-bs-target="#emergencyModal">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-			</button>
-		</div>
-
-		<!-- Emergency Contact Modal -->
-		<div class="modal fade" id="emergencyModal" tabindex="-1" aria-labelledby="emergencyModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header bg-danger text-white">
-						<h5 class="modal-title" id="emergencyModalLabel">Emergency Contact</h5>
-						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<p>For urgent system issues or emergencies, please contact our 24/7 support line:</p>
-						<div class="d-grid gap-2">
-							<a href="tel:+15551234567" class="btn btn-danger">
-								<i class="bi bi-telephone-fill me-2"></i> (555) 123-4567
-							</a>
-							<p class="text-center mt-2 mb-0">Our emergency team is available 24/7</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-		
-		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-		
-		<!-- Bootstrap Icons -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-		
-		<!-- Custom JavaScript -->
-	</body>
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="images/logo-white.svg" alt="Rab Homes Logo" height="40" class="mb-4">
+            <p>Rab Homes is a comprehensive renewable energy provider specializing in solar panel systems, energy storage solutions, and consultation services for both residential and commercial clients.</p>
+            <div class="social-links">
+              <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="me-2"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2 mb-4 mb-lg-0">
+            <h5 class="mb-4">Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+            <h5 class="mb-4">Services</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="services.html#solar">Solar Panel Installation</a></li>
+              <li><a href="services.html#storage">Energy Storage Solutions</a></li>
+              <li><a href="services.html#inverters">Inverter Systems</a></li>
+              <li><a href="services.html#consultation">Energy Consultation</a></li>
+              <li><a href="services.html#maintenance">Maintenance & Support</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="mb-4">Newsletter</h5>
+            <p>Subscribe to our newsletter for the latest updates and energy tips.</p>
+            <form class="newsletter-form">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" required>
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+            <p class="mt-3">
+              <i class="bi bi-telephone-fill me-2"></i> 1-800-RAB-HOMES<br>
+              <i class="bi bi-envelope-fill me-2"></i> info@rabhomes.com
+            </p>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4 border-secondary">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <p class="mb-0">&copy; 2025 Rab Homes. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
